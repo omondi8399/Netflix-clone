@@ -1,6 +1,7 @@
-import { getSession , signOut } from 'next-auth/react'
+import { getSession } from 'next-auth/react'
 import { NextPageContext } from 'next'
 import useCurrentUser from '@/hooks/useCurrentUser'
+import Navbar from '@/components/Navbar'
 
 
 
@@ -26,7 +27,7 @@ export default function Home() {
 
   return (
       <>
-          
+        <Navbar />  
       </>
   )
 }
