@@ -32,12 +32,12 @@ const Navbar = () => {
     },[])
 
     const toggleAccountMenu = useCallback(() => {
-        setAccountMenu((current) => !current)
+        setShowAccountMenu((current) => !current)
     },[])
 
 return (
     <nav className='w-full fixed z-40'>
-        <div className=' 
+        <div className={`
             px-4
             md:px-16
             py-6
@@ -46,9 +46,8 @@ return (
             items-center
             transition
             duration-500
-            bg-zinc-900
-            bg-opacity-90
-        '>
+            ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}
+        `}>
             <img className='h-4 lg:h-7' src='/images/logo.png' alt='logo' />
             <div className=' 
                 flex-row
