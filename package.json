@@ -33,6 +33,7 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.0"
+    "@types/bcrypt": "^5.0.0",
+    "@types/lodash": "^4.14.197"
   }
 }
