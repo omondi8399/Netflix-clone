@@ -83,9 +83,38 @@ return (
                             flex 
                             items-center
                             justify-center
-                        ' onClick={() => {}}>
+                        ' onClick={handleClose}>
                             <AiOutlineClose className="text-white" size={20} />
                         </div>
+                        
+                        <div className='
+                            absolute
+                            button-[10%]
+                            left-10
+                        '>
+                            <p className="text-white text-3xl md:text-4xl h-full ">
+                                {data?.title}
+                            </p>
+                            <div className='flex flex-row gap-4 items-center'>
+                                <PlayButton movieId={data?.id} />
+                                <FavoriteButton movieId={data?.id} />
+                            </div>
+                        </div>
+                </div>
+
+                <div className='px-12 py-8'>
+                    <p className='text-green-400 font-semibold text-lg'>
+                        New 
+                    </p>
+                    <p className='text-white text-lg'>
+                        {data?.duration}
+                    </p>
+                    <p className='text-white text-lg'>
+                        {data?.genre}
+                    </p>
+                    <p className='text-white text-lg'>
+                        {data?.description}
+                    </p>
                 </div>
             </div>
         </div>
@@ -94,3 +123,4 @@ return (
 }
 
 export default InfoModal
+
