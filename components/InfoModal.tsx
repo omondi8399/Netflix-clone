@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
+import { AiOutlineClose } from 'react-icons/ai'
 
 import PlayButton from '@/components/PlayButton';
 import FavoriteButton from '@/components/FavoriteButton';
@@ -40,7 +40,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
           <div className="relative h-96">
             <video poster={data?.thumbnailUrl} autoPlay muted loop src={data?.videoUrl} className="w-full brightness-[60%] object-cover h-full" />
             <div onClick={handleClose} className="cursor-pointer absolute top-3 right-3 h-10 w-10 rounded-full bg-black bg-opacity-70 flex items-center justify-center">
-              <XMarkIcon className="text-white w-6" />
+              <AiOutlineClose className="text-white w-6" />
             </div>
             <div className="absolute bottom-[10%] left-10">
               <p className="text-white text-3xl md:text-4xl h-full lg:text-5xl font-bold mb-8">
