@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 
-import PlayButton from '@/components/PlayButton';
-import useBillboard from '@/hooks/useBillboard';
-import useInfoModalStore from '@/hooks/useInfoModalStore';
+import PlayButton from '../components/PlayButton';
+import useBillboard from '../hooks/useBillboard';
+import useInfoModalStore from '../hooks/useInfoModalStore';
 
 const Billboard: React.FC = () => {
   const { openModal } = useInfoModalStore();

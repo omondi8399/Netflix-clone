@@ -5,7 +5,7 @@ import { getSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import { FaGithub } from 'react-icons/fa';
 
-import Input from '@/components/Input';
+import Input from '../components/Input';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);

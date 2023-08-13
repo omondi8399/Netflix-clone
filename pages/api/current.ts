@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import serverAuth from "@/libs/serverAuth";
+import serverAuth from "./../../libs/serverAuth";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {

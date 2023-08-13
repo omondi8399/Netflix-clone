@@ -4,8 +4,8 @@ import { BsFillPlayFill } from 'react-icons/bs'
 import { BiChevronDown } from 'react-icons/bi'
 
 import { MovieInterface } from '@/types';
-import FavoriteButton from '@/components/FavoriteButton';
-import useInfoModalStore from '@/hooks/useInfoModalStore';
+import FavoriteButton from '../components/FavoriteButton';
+import useInfoModalStore from '../hooks/useInfoModalStore';
 
 interface MovieCardProps {
   data: MovieInterface;

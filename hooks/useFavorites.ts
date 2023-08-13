@@ -1,5 +1,5 @@
 import useSwr from 'swr'
-import fetcher from '@/libs/fetcher';
+import fetcher from '../libs/fetcher';
 
 const useMovies = () => {
   const { data, error, isLoading, mutate } = useSwr('/api/favorites', fetcher, {

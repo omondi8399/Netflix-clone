@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import { useRouter } from 'next/router';
-import useMovie from '@/hooks/useMovie';
+import useMovie from '../../hooks/useMovie';
 
 const Watch = () => {
   const router = useRouter();

@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai'
 
-import PlayButton from '@/components/PlayButton';
-import FavoriteButton from '@/components/FavoriteButton';
-import useInfoModalStore from '@/hooks/useInfoModalStore';
-import useMovie from '@/hooks/useMovie';
+import PlayButton from '../components/PlayButton';
+import FavoriteButton from '../components/FavoriteButton';
+import useInfoModalStore from '../hooks/useInfoModalStore';
+import useMovie from '../hooks/useMovie';
 
 interface InfoModalProps {
   visible?: boolean;

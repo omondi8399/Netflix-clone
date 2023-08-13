@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { BsBell, BsChevronDown, BsSearch } from 'react-icons/bs'
 
-import AccountMenu from '@/components/AccountMenu';
-import MobileMenu from '@/components/MobileMenu';
-import NavbarItem from '@/components/NavbarItem';
+import AccountMenu from '../components/AccountMenu';
+import MobileMenu from '../components/MobileMenu';
+import NavbarItem from '../components/NavbarItem';
 
 const TOP_OFFSET = 66;
 
